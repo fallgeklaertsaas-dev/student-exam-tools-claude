@@ -1,0 +1,18 @@
+{
+  "status": "not-run",
+  "host": null,
+  "model": null,
+  "model_version": null,
+  "date": null,
+  "skill_locale": null,
+  "condition": "with-skill or without-skill",
+  "trial": null,
+  "case_id": null,
+  "tool_access": null,
+  "prompt": null,
+  "response": null,
+  "artifacts": [],
+  "must_pass": null,
+  "must_not_pass": null,
+  "notes": null
+}

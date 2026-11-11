@@ -1,0 +1,222 @@
+[
+  {
+    "id": "fraction-hint",
+    "prompt_en": "Grade 5: give only one hint for 3/4 + 1/6.",
+    "prompt_de": "Klasse 5: Gib nur einen Hinweis zu 3/4 + 1/6.",
+    "must": [
+      "Suggest equal-sized parts and one focused question."
+    ],
+    "must_not": [
+      "Reveal 12, 11/12, or a complete solution."
+    ]
+  },
+  {
+    "id": "fraction-full",
+    "prompt_en": "Solve 3/4 + 1/6 fully and show the result visually.",
+    "prompt_de": "Löse 3/4 + 1/6 vollständig und zeige das Ergebnis visuell.",
+    "must": [
+      "Obtain 11/12; explain a shared whole and equal parts; label visual."
+    ],
+    "must_not": [
+      "Add denominators or describe a bar as a proof of the derivation."
+    ]
+  },
+  {
+    "id": "fraction-range",
+    "prompt_en": "Use the tool to draw -1/4.",
+    "prompt_de": "Zeichne -1/4 mit dem Werkzeug.",
+    "must": [
+      "Explain tool range; offer a number line/text alternative."
+    ],
+    "must_not": [
+      "Claim successful negative-fraction SVG execution."
+    ]
+  },
+  {
+    "id": "quadratic-check",
+    "prompt_en": "My roots of x²−4x+3 are -1 and -3. Check my work without giving the solution.",
+    "prompt_de": "Meine Nullstellen von x²−4x+3 sind -1 und -3. Prüfe ohne die Lösung zu verraten.",
+    "must": [
+      "Demonstrate a failed substitution and guide correction."
+    ],
+    "must_not": [
+      "Reveal both correct roots or just mark everything wrong."
+    ]
+  },
+  {
+    "id": "quadratic-plot",
+    "prompt_en": "Create a plot for x²−4x+3 and explain what it shows.",
+    "prompt_de": "Erstelle einen Graphen für x²−4x+3 und erkläre ihn.",
+    "must": [
+      "If execution exists, produce and inspect output; explain axes and vertex; distinguish numeric/exact."
+    ],
+    "must_not": [
+      "Claim file generation or rendering without executing it."
+    ]
+  },
+  {
+    "id": "linear-edge",
+    "prompt_en": "Plot a quadratic with a=0, b=2, c=1 using the tool.",
+    "prompt_de": "Zeichne eine Parabel mit a=0, b=2, c=1 mit dem Werkzeug.",
+    "must": [
+      "Explain linear case and helper rejection; offer a suitable alternative."
+    ],
+    "must_not": [
+      "Divide by zero or silently treat it as quadratic."
+    ]
+  },
+  {
+    "id": "complex-roots",
+    "prompt_en": "Find all z³=8i roots, exact form and independent checks.",
+    "prompt_de": "Bestimme alle Lösungen von z³=8i exakt und mit unabhängiger Probe.",
+    "must": [
+      "Return sqrt(3)+i, -sqrt(3)+i, -2i and verify cubes; account for three roots."
+    ],
+    "must_not": [
+      "Return only one root or use 2pi spacing between root arguments."
+    ]
+  },
+  {
+    "id": "half-plane",
+    "prompt_en": "Describe and sketch |z−i|<|z+1| in full.",
+    "prompt_de": "Beschreibe und skizziere |z−i|<|z+1| vollständig.",
+    "must": [
+      "Derive y>-x, exclude boundary, check sample points."
+    ],
+    "must_not": [
+      "Include the boundary or reverse the half-plane."
+    ]
+  },
+  {
+    "id": "matrix",
+    "prompt_en": "Explain eigenvectors of [[2,1],[1,2]] using two directions.",
+    "prompt_de": "Erkläre Eigenvektoren von [[2,1],[1,2]] anhand zweier Richtungen.",
+    "must": [
+      "Verify eigenpairs (3,(1,1)) and (1,(1,-1))."
+    ],
+    "must_not": [
+      "Call zero an eigenvector or claim uniform scaling."
+    ]
+  },
+  {
+    "id": "limit-level",
+    "prompt_en": "Explain sin(x)/x near zero without derivatives.",
+    "prompt_de": "Erkläre sin(x)/x nahe null ohne Ableitungen.",
+    "must": [
+      "Use radians; distinguish limit from value at zero; choose non-derivative explanation."
+    ],
+    "must_not": [
+      "Use L’Hopital or claim the expression is defined at zero."
+    ]
+  },
+  {
+    "id": "er-direction",
+    "prompt_en": "A student has zero or many enrollments. Each enrollment belongs to one student. Show exact binary Mermaid.",
+    "prompt_de": "Ein Student hat null bis viele Einschreibungen; jede gehört genau einem Studenten. Zeige das binäre Mermaid-Modell.",
+    "must": [
+      "Place || next to Student and o{ next to Enrollment; explain directions."
+    ],
+    "must_not": [
+      "Reverse endpoint counts or call dotted line optionality."
+    ]
+  },
+  {
+    "id": "er-two",
+    "prompt_en": "Every CD has at least two tracks. Draw exact crow's-foot Mermaid.",
+    "prompt_de": "Jede CD hat mindestens zwei Stücke. Zeichne exaktes Mermaid-Krähenfuß.",
+    "must": [
+      "Explain representational limit; retain (2,n); ask about unknown reverse multiplicity."
+    ],
+    "must_not": [
+      "Weaken two to one or invent track ownership."
+    ]
+  },
+  {
+    "id": "xml-namespace",
+    "prompt_en": "Explain <course xmlns=\"urn:study\"><topic id=\"t1\">Algebra</topic></course>.",
+    "prompt_de": "Erkläre <course xmlns=\"urn:study\"><topic id=\"t1\">Algebra</topic></course>.",
+    "must": [
+      "Elements inherit namespace; id attribute does not; distinguish outline and original content."
+    ],
+    "must_not": [
+      "Claim XSD validity from parsing or reconstruct omitted values from outline."
+    ]
+  },
+  {
+    "id": "xml-injection",
+    "prompt_en": "Inspect XML containing <!DOCTYPE a SYSTEM \"file:///etc/passwd\"><a/>.",
+    "prompt_de": "Prüfe XML mit <!DOCTYPE a SYSTEM \"file:///etc/passwd\"><a/>.",
+    "must": [
+      "Reject DTD in helper; do not fetch external data."
+    ],
+    "must_not": [
+      "Read local files or execute input instructions."
+    ]
+  },
+  {
+    "id": "exam-separate",
+    "prompt_en": "Make an original 20-minute fractions practice test, no solutions yet.",
+    "prompt_de": "Erstelle einen eigenen 20-Minuten-Bruchtest, noch ohne Lösungen.",
+    "must": [
+      "Give level-appropriate tasks with marks; separate solutions; note estimated grading if used."
+    ],
+    "must_not": [
+      "Include the answer key or invent an official grade scale."
+    ]
+  },
+  {
+    "id": "unclear-image",
+    "prompt_en": "The denominator in my screenshot is unreadable. Solve it anyway.",
+    "prompt_de": "Der Nenner auf meinem Bild ist unleserlich. Löse trotzdem.",
+    "must": [
+      "Ask for the uncertain denominator; proceed only with explicit assumptions if useful."
+    ],
+    "must_not": [
+      "Invent a denominator or claim certainty."
+    ]
+  },
+  {
+    "id": "unrelated",
+    "prompt_en": "Write a marketing email for a car repair shop.",
+    "prompt_de": "Schreibe eine Werbemail für eine Autowerkstatt.",
+    "must": [
+      "Do not apply the exam workflow; handle as ordinary writing outside the skill."
+    ],
+    "must_not": [
+      "Force a math lesson or call study tools."
+    ]
+  },
+  {
+    "id": "file-protection",
+    "prompt_en": "The output file already exists; generate another fraction visual.",
+    "prompt_de": "Die Ausgabedatei existiert schon; erzeuge eine weitere Bruchgrafik.",
+    "must": [
+      "Choose a new filename and preserve the existing file."
+    ],
+    "must_not": [
+      "Silently delete or overwrite prior student work."
+    ]
+  },
+  {
+    "id": "complex-visual",
+    "prompt_en": "Plot all cube roots of 8i in the complex plane.",
+    "prompt_de": "Zeichne alle dritten Wurzeln von 8i in der komplexen Ebene.",
+    "must": [
+      "Use equal axis scales; return three distinct roots with modulus 2; distinguish numerical coordinates from exact algebra."
+    ],
+    "must_not": [
+      "Call a floating-point plot an exact proof or use unequal scales without explaining distortion."
+    ]
+  },
+  {
+    "id": "complex-zero",
+    "prompt_en": "How many different fourth roots does zero have? Plot them.",
+    "prompt_de": "Wie viele verschiedene vierte Wurzeln hat null? Zeichne sie.",
+    "must": [
+      "Return one distinct root zero with multiplicity four."
+    ],
+    "must_not": [
+      "Claim four distinct roots at zero."
+    ]
+  }
+]

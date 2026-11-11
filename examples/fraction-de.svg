@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="180" viewBox="0 0 800 180" role="img" aria-labelledby="title desc">
+<title id="title">Bruchmodell: 11/12</title><desc id="desc">11/12 = 11/12; markiert: 11, Teile pro Ganzem: 12</desc>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="16" fill="#172b4d">
+<text x="28" y="35" font-size="22">Bruchmodell: 11/12 = 11/12</text>
+<rect x="28.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="83.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="138.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="193.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="248.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="303.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="358.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="413.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="468.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="523.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="578.000" y="65" width="55.000" height="44" fill="#245ca6" stroke="#172b4d"/>
+<rect x="633.000" y="65" width="55.000" height="44" fill="#f1f4f9" stroke="#172b4d"/>
+<text x="705" y="94">1</text>
+<text x="28" y="168">Teile pro Ganzem = 12</text>
+</g></svg>

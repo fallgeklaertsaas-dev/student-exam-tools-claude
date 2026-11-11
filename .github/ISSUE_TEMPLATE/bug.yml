@@ -1,0 +1,23 @@
+name: Bug / Fehler
+description: Reproducible tool or skill behavior / Nachvollziehbarer Werkzeug- oder Skillfehler
+title: '[Bug] '
+body:
+  - type: markdown
+    attributes:
+      value: 'Use original/anonymized tasks only. Nur eigene/anonymisierte Aufgaben. No credentials or private school documents.'
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and input / Schritte und Eingabe
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result / Erwartetes und beobachtetes Ergebnis
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Skill locale, host/model or Python version / Skill-Sprache, Umgebung/Modell oder Python-Version

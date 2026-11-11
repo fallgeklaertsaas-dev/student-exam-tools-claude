@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student-exam-tools"
+version = "0.1.0"
+description = "Bilingual visual study skills and offline renderers for Claude"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Student Exam Tools contributors"}]
+keywords = ["education", "claude", "agent-skills", "mathematics", "er-diagram", "xml"]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Education", "Programming Language :: Python :: 3"]
+
+[project.scripts]
+student-exam = "student_exam_tools.toolkit:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

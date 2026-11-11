@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course xmlns="urn:student-exam:course" id="m1">
+  <title>Linear Algebra / Lineare Algebra</title>
+  <topics>
+    <topic id="complex"><name>Complex numbers / Komplexe Zahlen</name></topic>
+    <topic id="matrix"><name>Matrices / Matrizen</name></topic>
+  </topics>
+</course>

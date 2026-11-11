@@ -1,0 +1,9 @@
+# Security / Sicherheit
+
+**EN:** Only the current development version is maintained. Inspect scripts before enabling a skill. Helpers run locally without network calls, credentials or telemetry, refuse to overwrite output files, and reject DTD/entity declarations. XML input is capped at 200,000 bytes, 2,000 elements and depth 30 (root depth 0). ER input is capped at 30 entities and 60 relationships. These limits reduce risk; they are not a complete sandbox. Use host permissions and OS isolation for untrusted files. TeX examples need no shell escape; do not compile untrusted TeX as a privileged process.
+
+Do not post exploit payloads containing secrets or personal data in public. If GitHub private vulnerability reporting is enabled, use the repository Security tab. Otherwise use GitHub's private abuse/security reporting route as appropriate, or open a minimal issue asking for a private contact without disclosing exploit details. A response time is not guaranteed.
+
+**DE:** Gepflegt wird nur die aktuelle Entwicklungsversion. Prüfe Skripte vor dem Aktivieren. Die Helfer laufen lokal ohne Netzwerkaufrufe, Zugangsdaten oder Telemetrie, schützen vorhandene Ausgabedateien und lehnen DTD-/Entity-Deklarationen ab. XML ist auf 200.000 Bytes, 2.000 Elemente und Tiefe 30 (Wurzel bei 0) begrenzt; ER auf 30 Entitäten und 60 Beziehungen. Dies begrenzt Risiken, ersetzt aber keine Sandbox. Nutze Umgebungsrechte und Betriebssystemisolation bei fremden Dateien. Die TeX-Beispiele benötigen kein Shell-Escape; kompiliere fremdes TeX nicht mit erhöhten Rechten.
+
+Veröffentliche keine Exploit-Beispiele mit Geheimnissen oder personenbezogenen Daten. Nutze bei aktivierter privater Schwachstellenmeldung den Security-Bereich des Repositories. Andernfalls verwende je nach Fall einen privaten GitHub-Meldeweg oder eröffne ein minimales Issue mit der Bitte um privaten Kontakt, ohne Exploit-Details. Eine bestimmte Antwortzeit ist nicht zugesagt.

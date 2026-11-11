@@ -1,0 +1,27 @@
+name: Learning case / Lernbeispiel
+description: Improve teaching with an original example / Erklärung mit eigenem Beispiel verbessern
+title: '[Learning] '
+body:
+  - type: input
+    id: level
+    attributes:
+      label: Topic and level / Thema und Niveau
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Original task, desired mode and reasoning / Eigene Aufgabe, gewünschter Modus und Begründung
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observed output and checks / Beobachtete Ausgabe und Prüfungen
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy / Rechte und Datenschutz
+      options:
+        - label: I can share this example under MIT and removed private data / Ich darf dieses Beispiel unter MIT teilen und habe private Daten entfernt
+          required: true
