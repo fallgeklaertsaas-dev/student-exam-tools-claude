@@ -24,10 +24,13 @@ python3 scripts/validate_repo.py
 
 Run `build_skills.py` twice and compare `dist/SHA256SUMS.json` to check deterministic output. Both language bundles contain the same canonical Python bytes; only instructions and reference prose differ. A wheel from the reviewed source was built and installed in an isolated temporary target during review. This does not claim PyPI publication.
 
+## Published GitHub verification
+
+The [GitHub Actions run](https://github.com/fallgeklaertsaas-dev/student-exam-tools-claude/actions/runs/42990003219) completed successfully for commit `131d851` on Python 3.10, 3.12 and 3.13. Each job ran all 54 tests, rebuilt the two skill archives and validated the repository. The bilingual gallery contains 14 PNGs; source image links and the uploaded overview were verified. This checks code and packaging, not live Claude behavior.
+
 ## What remains unverified
 
 - Installation and actual model behavior in Claude web/desktop and local Claude Code. No Claude account session or API key was available. The 20 bilingual behavioral cases are defined, but the full with/without-skill Claude evaluation has **not been run**.
-- Python 3.10 and 3.13 CI execution. The workflow is configured, but no remote GitHub run is claimed before publication. Local tests used 3.12.14.
 - TeX compilation: both worksheet attempts were blocked because `pdflatex.fmt` is missing in this environment. The `.tex` files are source deliverables, not verified PDFs.
 - Mermaid rendering across host versions. Syntax and cardinality mapping are checked; a rendered Mermaid release screenshot is not included.
 - Learning outcomes, all school curricula, arbitrary mathematical expressions, general symbolic integration, XSD validation, identifying/ternary ER relationships and all accessibility technology combinations.

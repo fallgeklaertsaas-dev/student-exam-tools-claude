@@ -24,10 +24,13 @@ python3 scripts/validate_repo.py
 
 Führe `build_skills.py` zweimal aus und vergleiche `dist/SHA256SUMS.json` auf deterministische Ausgabe. Beide Sprachpakete enthalten identische Python-Originalbytes; Anweisungen und Referenztexte sind übersetzt. Im Review wurde ein Wheel des geprüften Quellstands in ein isoliertes temporäres Ziel gebaut und installiert. Eine Veröffentlichung auf PyPI wird damit nicht behauptet.
 
+## Prüfung nach GitHub-Veröffentlichung
+
+Der [GitHub-Actions-Lauf](https://github.com/fallgeklaertsaas-dev/student-exam-tools-claude/actions/runs/42990003219) bestand für Commit `131d851` unter Python 3.10, 3.12 und 3.13. Jeder Job führte alle 54 Tests aus, baute beide Skill-Archive neu und prüfte das Repository. Die zweisprachige Galerie enthält 14 PNGs; Bildverlinkungen und hochgeladene Übersicht wurden geprüft. Dies bestätigt Code und Paketstruktur, nicht das Verhalten in einem echten Claude-Konto.
+
 ## Noch nicht verifiziert
 
 - Installation und tatsächliches Modellverhalten in Claude Web/Desktop und lokalem Claude Code. Es gab keine Claude-Kontositzung und keinen API-Schlüssel. Die 20 zweisprachigen Verhaltensfälle sind definiert; die vollständige Claude-Evaluation mit/ohne Skill wurde **nicht ausgeführt**.
-- CI-Ausführung unter Python 3.10 und 3.13. Der Workflow ist vorbereitet; vor Veröffentlichung wird kein GitHub-Prüflauf behauptet. Lokal lief Python 3.12.14.
 - TeX-Kompilierung: Beide Arbeitsblattversuche scheiterten am fehlenden `pdflatex.fmt` dieser Umgebung. Die `.tex`-Dateien sind Quellen, keine verifizierten PDFs.
 - Mermaid-Darstellung in verschiedenen Umgebungsversionen. Syntax und Kardinalitätszuordnung sind geprüft; ein gerenderter Mermaid-Release-Screenshot liegt nicht vor.
 - Lernwirksamkeit, sämtliche Schullehrpläne, beliebige mathematische Terme, allgemeine symbolische Integration, XSD-Validierung, identifizierende/ternäre ER-Beziehungen und alle Kombinationen assistiver Technik.
