@@ -10,6 +10,12 @@ Visual exam preparation with English and German Claude skills: understand a conc
 
 **Status: v0.1.0, early-stage.** The repository contains installable skill folders and offline Python helpers. It is an independent community project, not an Anthropic product or an endorsed curriculum. AI-assisted implementation is disclosed; learning effectiveness and behavior in a live Claude account have not yet been measured.
 
+## Project facts
+
+Two installable language skills · Five offline helpers · 54 automated test methods passing in CI on Python 3.10, 3.12 and 3.13 · 20 bilingual behavioral cases defined. This is an early public release; the full live-Claude comparison and downstream adoption are not yet documented.
+
+[Evidence and next milestones](PROJECT.md) · [Machine-readable facts](project.json)
+
 ## What it does
 
 | Area | Learning workflow | Included executable helper |

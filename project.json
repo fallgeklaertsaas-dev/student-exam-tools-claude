@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-11-12",
+  "project": {
+    "name": "Student Exam Tools for Claude",
+    "repository": "https://github.com/fallgeklaertsaas-dev/student-exam-tools-claude",
+    "version": "0.1.0",
+    "status": "early-public-release",
+    "license": "MIT",
+    "maintainer": "fallgeklaertsaas-dev",
+    "languages": [
+      "en",
+      "de"
+    ]
+  },
+  "purpose": "Reusable visual study workflows for school and introductory university mathematics and information modeling.",
+  "capabilities": {
+    "skill_packages": [
+      "student-exam-en",
+      "student-exam-de"
+    ],
+    "offline_helpers": [
+      "fraction",
+      "quadratic",
+      "complex-roots",
+      "er",
+      "xml"
+    ],
+    "python_runtime": ">=3.10",
+    "runtime_dependencies": "Python standard library",
+    "network_required_by_helpers": false,
+    "api_key_required_by_helpers": false
+  },
+  "evidence": {
+    "automated_test_methods": 54,
+    "python_versions_verified_in_ci": [
+      "3.10",
+      "3.12",
+      "3.13"
+    ],
+    "verified_commit": "e34942f76b76a0d368f81ad50c5c892ee65979ee",
+    "ci_run": "https://github.com/fallgeklaertsaas-dev/student-exam-tools-claude/actions/runs/42990301301",
+    "behavioral_cases_defined": 20,
+    "case_languages": [
+      "en",
+      "de"
+    ],
+    "full_live_claude_comparison_status": "not-executed-in-project-record",
+    "qualitative_forward_test_host": "Codex assistant, not Claude",
+    "learner_outcome_study_status": "not-recorded",
+    "documentation": "docs/quality-en.md"
+  },
+  "reach_snapshot": {
+    "repository_created_on": "2026-11-11",
+    "stars": 0,
+    "forks": 0,
+    "listed_contributor_accounts": 1,
+    "external_contributor_accounts_observed": 0,
+    "merged_pull_requests": 0,
+    "published_github_releases": 0,
+    "unique_downloads": null,
+    "active_users": null,
+    "verified_downstream_dependents": null,
+    "verified_institutional_users": null,
+    "null_means": "Not measured or not documented; not a claim of zero usage.",
+    "sources": [
+      "https://api.github.com/repos/fallgeklaertsaas-dev/student-exam-tools-claude",
+      "https://api.github.com/repos/fallgeklaertsaas-dev/student-exam-tools-claude/contributors?anon=true&per_page=100",
+      "https://api.github.com/repos/fallgeklaertsaas-dev/student-exam-tools-claude/pulls?state=all&per_page=100",
+      "https://api.github.com/repos/fallgeklaertsaas-dev/student-exam-tools-claude/releases?per_page=100"
+    ]
+  },
+  "planned_evaluation": {
+    "cases": 20,
+    "languages": 2,
+    "conditions": [
+      "with-skill",
+      "without-skill"
+    ],
+    "trials_per_condition": 3,
+    "target_recorded_conversational_trials": 240,
+    "status": "planned",
+    "results_template": "evals/result-template.json"
+  },
+  "entry_points": {
+    "overview_en": "PROJECT.md",
+    "overview_de": "PROJECT.de.md",
+    "readme_en": "README.md",
+    "readme_de": "README.de.md",
+    "contributing_en": "CONTRIBUTING.md",
+    "contributing_de": "CONTRIBUTING.de.md",
+    "install_en": "docs/installation-en.md",
+    "install_de": "docs/installation-de.md",
+    "packages": "packages/",
+    "evaluations": "evals/cases.json"
+  }
+}

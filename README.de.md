@@ -10,6 +10,12 @@ Visuelle Prüfungsvorbereitung mit deutschen und englischen Claude-Skills: Konze
 
 **Stand: v0.1.0, frühe Entwicklungsphase.** Enthalten sind installierbare Skill-Ordner und lokale Python-Helfer. Dies ist ein unabhängiges Community-Projekt, kein Anthropic-Produkt und kein bestätigter Lehrplan. Die Umsetzung entstand mit KI-Unterstützung; Lernwirksamkeit und Verhalten in einem echten Claude-Konto wurden bisher nicht gemessen.
 
+## Projektfakten
+
+Zwei installierbare Sprach-Skills · Fünf lokale Helfer · 54 automatische Testmethoden in CI unter Python 3.10, 3.12 und 3.13 bestanden · 20 zweisprachige Verhaltensfälle definiert. Dies ist eine frühe öffentliche Version; der vollständige Live-Claude-Vergleich und externe Nutzung sind bislang nicht dokumentiert.
+
+[Nachweise und nächste Meilensteine](PROJECT.de.md) · [Maschinenlesbare Fakten](project.json)
+
 ## Funktionen
 
 | Bereich | Lernablauf | Enthaltenes ausführbares Werkzeug |
